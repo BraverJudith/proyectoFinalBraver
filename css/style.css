@@ -1,0 +1,611 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+#carousel {
+  margin: 30px;
+}
+#carousel .cards-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+#carousel .cards-wrapper .card {
+  width: 33.3333333333%;
+  margin: 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  max-height: 15rem;
+}
+#carousel .cards-wrapper .card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#carousel .carousel-control-prev,
+#carousel .carousel-control-next {
+  background-color: #5f2f56;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: bisque;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: "Young Serif", serif;
+  width: 100%;
+  min-height: 100vh;
+  background: #FFE9E9;
+}
+
+header {
+  border-radius: 0px 0px 452px 452px;
+  background: rgba(196, 210, 229, 0.67);
+  height: 6.25rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+header nav div {
+  margin-left: 8.25rem;
+  text-align: left;
+}
+header nav div a img {
+  height: 7.5rem;
+}
+header nav #toggle, header nav label {
+  display: none;
+}
+header nav div ul {
+  display: flex;
+  padding-right: 2.5rem;
+  gap: 1.25rem;
+}
+header nav div ul a {
+  color: rgb(77, 52, 102);
+  font-size: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background: #A3AEBE;
+  text-align: center;
+  width: 100%;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer div img {
+  height: 6rem;
+}
+footer div ul li {
+  padding: 0.625rem;
+}
+footer div ul li a {
+  color: rgb(77, 52, 102);
+}
+footer div nav ul li a img {
+  height: 3rem;
+}
+.mainNosotros {
+  width: 100%;
+  background: #FFE9E9;
+}
+.mainNosotros .bannerNosotros {
+  background-image: url("../assets/images/sobre-nosotros.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 36rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainNosotros .bannerNosotros h1 {
+  color: rgb(77, 52, 102);
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: rgba(173, 173, 173, 0.5);
+  width: 35rem;
+  text-align: center;
+  padding: 1.25rem;
+}
+.mainNosotros .sobreNosotros {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(2, 50%);
+  gap: 30px;
+  padding-bottom: 2rem;
+  margin: 0 14em;
+  align-items: center;
+}
+.mainNosotros .sobreNosotros h2 {
+  padding: 5%;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  color: #A15C82;
+  text-align: center;
+  font-size: 3rem;
+}
+.btnCatalogo{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.btnCatalogo h3 {
+  text-align: center;
+  background-color: rgb(175, 175, 175);
+  width: 15rem;
+  text-align: center;
+  padding: 18px;
+  border: 1px solid rgba(13, 13, 13, 0.048);
+  border-radius: 1.5625rem;
+  color: rgb(15, 15, 15);
+  font-size: 1.5rem;
+  letter-spacing: 0, 0.1rem;
+  box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.26);
+}
+.btnCatalogo h3 a {
+  color: #A15C82;
+}
+.mainNosotros .sobreNosotros p {
+  text-align: justify;
+}
+.mainNosotros .sobreNosotros img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mainNosotros .sobreNosotros p:nth-child(2) {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.mainNosotros .sobreNosotros img:nth-child(1) {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.mainNosotros .sobreNosotros p:nth-child(3) {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.mainNosotros .sobreNosotros img:nth-child(2) {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.bannerCatalogo {
+  background-image: url("../assets/images/sobre-nosotros.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.catalogoCard {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: row; 
+  margin: 30px;
+}
+
+#card{
+  justify-content: center;
+  align-items: center;
+}
+#card .card{
+  display: inline-flex;
+  margin: 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  max-height: 25rem;
+  gap: 10px;
+  padding: 0px;
+  width:30%;
+  gap:2px;
+  margin:10px 10px;
+  justify-content: center;
+  align-items: center;
+}
+#card .card:hover > .textoHover {
+  opacity: 1;
+  visibility: visible;
+}
+#card .card div {
+  width: 100%;
+  height: 10rem;
+  text-align: center;
+}
+#card .card div img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: all 500ms ease-out;
+}
+#card .card .textoHover {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 80%;
+  background: rgba(249, 113, 165, 0.404);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  color: rgb(70, 4, 64);
+}
+#card .card .textoHover h3 {
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+.card button{
+  display: inline-flex;
+  background-color: #A15C82;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.table{
+  margin-top: 20px;
+}
+#quitar{
+  text-align: center;
+}
+.boton-eliminar{
+  text-align: center;
+}
+.presupuestoTotal{
+  text-align: center;
+}
+.precioTotal{
+  text-align: Left;
+}
+.formulario{
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+#formularioCheckout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#formularioCheckout label {
+  margin-bottom: 8px;
+}
+
+#formularioCheckout input,
+#formularioCheckout select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+#mensajeFinal {
+  padding:10px;
+  margin: 16px;
+}
+#mensajeFinal.disabled {
+  pointer-events: none;
+  opacity: 0;
+}
+
+
+#formularioCheckout button {
+  display: flex;
+  background-color: #A15C82;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+#formularioCheckout button:hover {
+  background-color: #8577c2;
+}
+.btnDisabled{
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+@-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+
+
+@media (max-width: 929px) {
+  header {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  header nav {
+    flex-direction: column;
+  }
+  header nav .logoPrincipal {
+    margin-left: 0px;
+  }
+  header nav .menu {
+    margin: 10px 0px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  header nav {
+    flex-direction: column;
+  }
+  header nav #toggle:checked ~ .menu, header nav label:checked ~ .menu {
+    height: auto;
+  }
+  header nav label {
+    display: flex;
+    justify-content: center;
+    color: rgb(77, 52, 102);
+    cursor: pointer;
+    background: linear-gradient(180deg, #D19696 8.85%, #929292 100%);
+    border-radius: 542.4px;
+    width: 100%;
+    margin-top: 0.625rem;
+  }
+  header nav .menu {
+    margin-top: 160px;
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+  }
+  header nav .menu .navBar {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0rem;
+    border-radius: 40px 40px 452px 452px;
+    background: rgba(196, 210, 229, 0.67);
+    height: 12.5rem;
+    margin-top: 0.625rem;
+  }
+  .mainIndex .bannerIndex h1, .mainIndex .bannerIndex h2 {
+    display: none;
+  }
+  .mainIndex .productosDestacados h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .mainIndex .productosDestacados ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .mainIndex .productosDestacados ul li a img {
+    width: 15rem;
+  }
+  .mainIndex .ofertas ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .mainIndex .ofertas ul li a img {
+    width: 15rem;
+  }
+  .indexSection img {
+    height: 3rem;
+  }
+  .mainNosotros .bannerNosotros {
+    padding-top: 18rem;
+  }
+  .mainNosotros .bannerNosotros h1 {
+    font-size: 2rem;
+    width: 25rem;
+    padding: 1.25rem;
+  }
+  .mainNosotros .sobreNosotros {
+    margin: 0 5em;
+  }
+  .mainNosotros .sobreNosotros h2 {
+    font-size: 2rem;
+  }
+  .mainNosotros .sobreNosotros p {
+    font-size: 0.75rem;
+  }
+  .contacto .mainContact {
+    grid-template-columns: 100%;
+    gap: 1.25rem;
+  }
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  footer div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  footer div img {
+    height: 4rem;
+  }
+  footer div ul li {
+    padding: 0.625rem;
+  }
+  footer div ul li img {
+    height: 3rem;
+  }
+  .mainProduct .producto {
+    grid-template-columns: 2fr 2fr;
+    margin-top: 10rem;
+    gap: 20px;
+  }
+  .mainProduct .producto section img {
+    width: 15em;
+  }
+  .mainProduct .producto section h2 {
+    font-size: 1rem;
+  }
+  .mainProduct .producto section p {
+    font-size: 0.75rem;
+  }
+  .page .numeros {
+    margin: 20rem 0rem 6rem;
+  }
+}
+@media (max-width: 425px) {
+  .mainNosotros .bannerNosotros h1 {
+    color: rgb(77, 52, 102);
+    font-size: 1.6rem;
+    width: 15rem;
+    padding: 1.25rem;
+  }
+  .mainNosotros .sobreNosotros {
+    grid-template-columns: 100%;
+    grid-template-rows: 10% repeat(4, 1fr);
+    margin: 0 4em;
+    gap: 0px;
+  }
+  .mainNosotros .sobreNosotros h2 {
+    font-size: 1rem;
+  }
+  .mainNosotros .sobreNosotros p:nth-child(2) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .mainNosotros .sobreNosotros img:nth-child(4) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .mainNosotros .sobreNosotros p:nth-child(3) {
+    margin-top: 2rem;
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .mainNosotros .sobreNosotros img:nth-child(5) {
+    margin-top: 2rem;
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .mainIndex .productosDestacados {
+    gap: 0;
+    padding: 23px 0px;
+  }
+  .mainIndex .ofertas .indexSection h3 {
+    font-size: 0.75rem;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  footer .menuFooter, footer .footerImg {
+    display: none;
+  }
+  footer .socialMedia {
+    display: flex;
+  }
+  footer .socialMedia ul {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+  }
+  footer .socialMedia ul a img {
+    height: 1.5em;
+  }
+  .whatsapp {
+    height: 2em;
+    bottom: 20px;
+  }
+  .mainContact {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .mainProduct .producto {
+    grid-template-columns: 100%;
+  }
+  .mainProduct .producto .fotoProducto img {
+    width: 15em;
+  }
+  .contacto section h1 {
+    font-size: 1.25rem;
+  }
+  .page .numeros {
+    margin: 12rem 0rem 6rem;
+  }
+  .page .numeros img {
+    height: 5rem;
+  }
+  .page div h2 {
+    font-size: 2rem;
+  }
+}

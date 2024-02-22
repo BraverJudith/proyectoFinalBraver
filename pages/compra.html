@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Conseguí tus lanas al mejor precio, el mejor catalogo">
+        <meta name="keywords" content="lanas,hilados lho, hilados">
+        <meta name="author" content="Judith Braver">
+        <meta name="copyright" content="LanasNadia">
+        <meta property="og:image" content="https://lanasnadia.netlify.app/assets/images/logo.png">
+        <link  rel="stylesheet"  href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/icon.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.all.min.js"></script>
+        <script defer src="/js//class.compra.js"></script>
+        <script defer src="/js/checkout.js"></script>
+        <title>Catalogo - Lanas Nadia</title>
+    </head>
+    <body>
+        <header class="nav-wrapper">
+            <nav>
+                <div class="logoPrincipal"><a href="#"><img src="../assets/images/logo.png" alt="logo lanas nadia"></a></div>
+                <input type="checkbox" id="toggle">
+                <label for="toggle"><i class="material-icons">menu</i></label>
+                <div class="menu">
+                    <ul class="navBar">
+                        <li><a href="/pages/catalogo.html">CATALOGO</a></li>
+                        <li><img id="carrito" src="../assets/icons/pngegg.png" alt="carrito"><a href="#">CARRITO</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="mainCatalogo">
+            <div class="bannerCatalogo">
+                <article class="bannerNosotros">
+                    <h1>GRACIAS POR SU COMPRA</h1>
+                </article>
+            </div>
+            <div id="contenedor" class="container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Codigo de Art.</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th id="quitar">Quitar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Carrito vacio</td>
+                            <td>Agrega Articulos para poder verlos</td>
+                            <td>$00 </td>
+                            <td data-eliminar class="boton-eliminar" title="Eliminar"><img src="../assets/icons/basura.png" alt="Quitar producto"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="formulario">
+                <form id="formularioCheckout">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" value="Antonio Perez">
+        
+                    <label for="direccion">Opciones de envio:</label>
+                    <select id="direccion">
+                        <option value="Envio a domicilio">Envio a domicilio</option>
+                        <option value="Retiro por local">Retiro por local</option>
+                    </select>
+                    <label for="mail">Direccion de mail:</label>
+                    <input type="text" id="mail" name="mail" value="xxxxx@gmail.com">
+        
+                    <button type="submit">COMPRAR</button>
+                </form>
+            </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footerImg">
+                    <img src="../assets/images/Mercado-Pago-Logo.png" alt="acepto mercado pago">
+                    <img src="../assets/images/envios-a-todo-el-pais.png" alt="envios a todo el pais">
+            </div>
+            <div>
+                <nav class="menuFooter">
+                    <ul>
+                        <li><a href="../index.html">SOBRE NOSOTROS</a></li>
+                        <li><a href="#">CATALOGO</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <nav class="socialMedia">
+                    <ul>
+                        <li><a><img src="../assets/icons/bxl-facebook-circle.svg" alt="facebook"></a></li>
+                        <li><a><img src="../assets/icons/bxl-instagram-alt.svg" alt="instagram"></a></li>
+                        <li><a><img src="../assets/icons/bxl-twitter.svg" alt="instagram"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>       
+    </body>
+</html>

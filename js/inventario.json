@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1001,
+    "imagen": "../assets/images/madeja-azul.png",
+    "nombre": "Cash Verano",
+    "precio": 1910,
+    "presentacion": "madeja",
+    "temporada": "verano"
+  },
+  {
+    "id": 1002,
+    "imagen": "../assets/images/madeja-azul.png",
+    "nombre": "Algodon Fino",
+    "precio": 2000,
+    "presentacion": "madeja",
+    "temporada": "verano"
+  },
+  {
+    "id": 1003,
+    "imagen": "../assets/images/madeja-azul.png",
+    "nombre": "Algodon Grueso",
+    "precio": 2300,
+    "presentacion": "madeja",
+    "temporada": "verano"
+  },
+  {
+    "id": 1004,
+    "imagen": "../assets/images/madeja-azul.png",
+    "nombre": "Cashmilon 8/3",
+    "precio": 1910,
+    "presentacion": "madeja",
+    "temporada": "invierno"
+  },
+  {
+    "id": 1005,
+    "imagen": "../assets/images/afrodita.png",
+    "nombre": "Afrodita",
+    "precio": 2500,
+    "presentacion": "madeja",
+    "temporada": "invierno"
+  },
+  {
+    "id": 1006,
+    "imagen": "../assets/images/nevilan.png",
+    "nombre": "Nevilan",
+    "precio": 3000,
+    "presentacion": "madeja",
+    "temporada": "invierno"
+  },
+  {
+    "id": 1008,
+    "imagen": "../assets/images/nachito1.png",
+    "nombre": "Nachito",
+    "precio": 2450,
+    "presentacion": "ovillo",
+    "temporada": "invierno"
+  },
+  {
+    "id": 1009,
+    "imagen": "../assets/images/nachito2.png",
+    "nombre": "Nachito Matizado",
+    "precio": 3450,
+    "presentacion": "ovillo",
+    "temporada": "invierno"
+  },
+  {
+    "id": 1010,
+    "imagen": "../assets/images/sole1.png",
+    "nombre": "Sole",
+    "precio": 2910,
+    "presentacion": "ovillo",
+    "temporada": "verano"
+  },
+  {
+    "id": 1011,
+    "imagen": "../assets/images/luna.png",
+    "nombre": "Luna",
+    "precio": 3910,
+    "presentacion": "ovillo",
+    "temporada": "verano"
+  },
+  {
+    "id": 1012,
+    "imagen": "../assets/images/nachito2.png",
+    "nombre": "Patagonia",
+    "precio": 4790,
+    "presentacion": "ovillo",
+    "temporada": "invierno"
+  }
+]
