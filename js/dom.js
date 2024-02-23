@@ -122,4 +122,4 @@ selectorOrden.addEventListener("change", () => {
         productosOrdenados = inventario.slice()
     }
     cargarProductos(productosOrdenados)
-});
+})
