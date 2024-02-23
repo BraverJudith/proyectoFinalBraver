@@ -1,7 +1,7 @@
 [
   {
     "id": 1001,
-    "imagen": "../assets/images/madeja-azul.png",
+    "imagen": "../assets/images/madeja1.jpg",
     "nombre": "Cash Verano",
     "precio": 1910,
     "presentacion": "madeja",
@@ -9,7 +9,7 @@
   },
   {
     "id": 1002,
-    "imagen": "../assets/images/madeja-azul.png",
+    "imagen": "../assets/images/madejas2.png",
     "nombre": "Algodon Fino",
     "precio": 2000,
     "presentacion": "madeja",
@@ -17,7 +17,7 @@
   },
   {
     "id": 1003,
-    "imagen": "../assets/images/madeja-azul.png",
+    "imagen": "../assets/images/madejas3.png",
     "nombre": "Algodon Grueso",
     "precio": 2300,
     "presentacion": "madeja",
@@ -25,7 +25,7 @@
   },
   {
     "id": 1004,
-    "imagen": "../assets/images/madeja-azul.png",
+    "imagen": "../assets/images/madejas4.png",
     "nombre": "Cashmilon 8/3",
     "precio": 1910,
     "presentacion": "madeja",
@@ -81,9 +81,17 @@
   },
   {
     "id": 1012,
-    "imagen": "../assets/images/nachito2.png",
+    "imagen": "../assets/images/varese.png",
     "nombre": "Patagonia",
     "precio": 4790,
+    "presentacion": "ovillo",
+    "temporada": "invierno"
+  },
+  {
+    "id": 1013,
+    "imagen": "../assets/images/jorFranc.png",
+    "nombre": "Jor Franc",
+    "precio": 4490,
     "presentacion": "ovillo",
     "temporada": "invierno"
   }
